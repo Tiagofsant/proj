@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+p {
+  margin-top: 30px;
+  text-align: justify;
+}
+
+/* pseudo elementos */
+
+p::first-letter {
+  color: red;
+  font-size: 50px;
+}
+
+p::first-line {
+  color: brown;
+  font-variant: small-caps;
+}
+
+::selection {
+  color: bisque;
+  background: violet;
+}
+
+.ex1 {
+  margin-top: 30px;
+}
+
+img {
+  object-fit: cover;
+}
+
+/* SELETORES DE ATRIBUTOS */
+
+/* SELECIONA O ATRIBUTO ESPECIFICO */
+
+a[target="_blank"] {
+  background-color: yellow;
+}
+
+img[title~="coruja"] {
+  border: 5px solid green;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+img[title~="cavalo"] {
+  border: 5px solid brown;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  opacity: 50%;
+}
+
+/* ESTE MUDA A OPACIDADE DOS ELEMENTOS */
+.opacidade {
+  opacity: 0.3; /* vai de 0 a 1 ou de 0% a 100% */
+}
+
+/* SELECIONA O NOME QUE ESTÁ DE INICIO NA CLASS
+EX: EX-QUALQUER-COISA */
+
+[class^="ex"] {
+  background: green;
+  color: white;
+}
+
+/* SELECIONA TUDO O QUE TEM TOP SEPARADO
+EX: TOP-ALGUMA-COISA
+EX2: TOP */
+
+[class^="top"] {
+  background: blueviolet;
+}
+
+/* SELECIONA TUDO O QUE TIVER CONT NA CLASSE */
+
+[class*="cont"] {
+  background: bisque;
+}

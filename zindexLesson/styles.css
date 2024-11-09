@@ -13,7 +13,7 @@
 
 .div2 {
   position: absolute;
-  z-index: 3;
+  z-index: 2;
   background: lightgray;
   border: 2px solid black;
   height: 60px;
@@ -24,7 +24,7 @@
 
 .div3 {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   background: lightgreen;
   border: 2px solid black;
   width: 35%;

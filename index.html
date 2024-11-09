@@ -3,73 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!-- --------------------2 FONTES EXTERNAS-----------------------------  -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sofia&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- --------------------FIM DAS 2 FONTES EXTERNAS-----------------------------  -->
-
-    <title>Aula 11</title>
+    <title>Meu Primeiro JavaScript</title>
   </head>
-  <body>
-    <!-- <h1 class="lowercase">EU SOU O H1</h1>
-    <h2 class="capitalize">eu sou o h2</h2>
-    <h3>EU SOU O H3</h3>
-    <h4>EU SOU O H4</h4>
-    <h5>EU SOU O H5</h5>
-    <h6>EU SOU O H6</h6>
+  <br>
+    <h1 id="demonstrativo">Olá, eu sou o primeiro comando a ser alterado</h1>
 
-    <p class="invertido">Este pararafo é feito para exemplo de direção.</p>
+    <h4 id="demo">Esté é um paragráfo</h4>
 
-    <p class="lowercase">
-      Este é um paragrafo que tem uma imagem
-      <img
-        class="boxIcon"
-        src="https://cdn-icons-png.flaticon.com/512/679/679821.png"
-        alt="box icon"
-        width="10px"
-        height="10px"
-      />
-      de uma caixa, colocado para testar a prop de alinhamento vetical. Lorem
-      ipsum dolor sit amet, consectetur adipisicing elit. Quas vitae totam
-      laudantium inventore beatae! Neque molestias, fuga quae laboriosam quo,
-      quam ipsum iusto autem exercitationem, blanditiis atque necessitatibus
-      aperiam laborum!
-    </p> -->
+    <button type="button" onclick="MudaTexto()">Alterar Texto</button>
 
-    <h1>EU SOU O H1</h1>
-    <h2>eu sou o h2</h2>
-    <h3>EU SOU O H3</h3>
-    <h4>EU SOU O H4</h4>
-    <h5>EU SOU O H5</h5>
-    <h6>EU SOU O H6</h6>
+    <!--  RETORNO DENTRO DO HTML -->
+    <button type="button" onclick="document.write(5 + 45)">
+      Alterar texto 2
+    </button>
 
-    <p class="ex1">
-      Lista 1 Lista 2 Lista 3 Lista 4 Lista 5 Lista 6 Lista 7 Lista 8 Lista 9
-      Lista 10 Lista 11 Lista 12 Lista 13 Lista 14 1234567890
-    </p>
+    <!--  RETORNO DENTRO DO HTML -->
+    <button type="button" onclick="window.print()">Printar tela</button>
 
-    <p class="ex2">
-      Lista 1 Lista 2 Lista 3 Lista 4 Lista 5 Lista 6 Lista 7 Lista 8 Lista 9
-      Lista 10 Lista 11 Lista 12 Lista 13 Lista 14 1234567890
-    </p>
+    <!--  RETORNO DE ALERTA -->
+    <button type="button" onclick="alerta()">VERIFICAR FUNCIONALIDADE</button>
 
-    <p class="ex3">
-      Lista 1 Lista 2 Lista 3 Lista 4 Lista 5 Lista 6 Lista 7 Lista 8 Lista 9
-      Lista 10 Lista 11 Lista 12 Lista 13 Lista 14 1234567890
-    </p>
+    <br />
+    <br />
 
-    <div style="color: red">OLA EU SOU A DIV, FAÇA O TESTE DA FONTE</div>
+    <h2 id="nome1">Nome 1</h2>
+    <h2 id="nome2">Nome 2</h2>
+
+    <button type="button" onclick="mudaNome()">MUDA NOME</button>
+
+    <button type="button" onclick="escopo()">exemplo de escopo</button>
+
+    <hr />
+    <hr />
+
+    <h3 id="aritmetico1">Soma</h3>
+    <h3 id="aritmetico2">Multiplicação</h3>
+    <h3 id="aritmetico3">Divisão</h3>
+    <h3 id="aritmetico4">Resto da Divisão</h3>
+    <h3 id="aritmetico5">Incremento</h3>
+    <h3 id="aritmetico6">Decremento</h3>
+    <h3 id="aritmetico7">Resto da Divisão com retorno zerado</h3>
+    <h3 id="aritmetico8">Equação com Parenteses</h3>
+
+    <button type="submit" onclick="calcular()">
+      Clique aqui para rodar os calculos
+    </button>
+
+    <br/>
+    <br/>
+    <hr />
+
+    <!-- ---------------------------- SCRIPTS -------------------- -->
+
+    <script src="/js/scripts.js"></script>
+    <script src="/js/retornoDados.js"></script>
+    <script src="/js/caseSensitive.js"></script>
+    <script src="/js/operadoresAritmeticos.js"></script>
+    <script src="/js/escopoVariaveis.js"></script>
+
+    
   </body>
 </html>
